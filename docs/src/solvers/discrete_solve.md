@@ -38,14 +38,14 @@ FunctionMap{scale_by_time}()
 Every step is the update
 
 ```math
-u_{n+1} = f(t_{n+1},u_n).
+u_{n+1} = f(t_{n},u_n).
 ```
 
 If in addition `scale_by_time` is marked `true` (default is false), 
 then every step is the update:
 
 ```math
-u_{n+1} = u_n + dtf(t_{n+1},u_n).
+u_{n+1} = u_n + dtf(t_{n},u_n).
 ```
 
 Notice that this is the same as updates from the Euler method, except in this
